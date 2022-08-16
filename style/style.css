@@ -77,21 +77,3 @@ span{
     font-size: 2.0rem;
     text-transform: capitalize;
 }
-
-.carregando{
-    visibility: hidden;
-}
-
-@media  (max-width: 600px){
-    #descricao{
-        font: 0.5rem;
-    }
-    #cidade{
-        font-size: 2.5rem;
-    }
-    .tempo{
-        font-size: 1.5rem;
-    }
-
-    
-}
