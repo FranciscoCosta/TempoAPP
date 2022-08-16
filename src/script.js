@@ -13,13 +13,13 @@ const btnSearch = document.getElementById('btn-procurar');
 
 btnSearch.addEventListener('click',async()=>{
     const localidade = busca.value;
-    criaCartao(localidade);
+    const corre = await criaCartao(localidade)
 })
 
 busca.addEventListener('keyup',async(event)=>{
     if((event.key == "Enter")){
     const localidade = busca.value;
-    criaCartao(localidade);
+    const corre = await criaCartao(localidade)
 }
 })
 
