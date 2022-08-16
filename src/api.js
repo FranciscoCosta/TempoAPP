@@ -1,4 +1,3 @@
-
 const buscaApi = async(cidade)=>{
     try{
         const chave = '1b83ba0a5e8b9652e01ec52f0f1dd40d'
