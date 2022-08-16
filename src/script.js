@@ -16,6 +16,21 @@ btnSearch.addEventListener('click',async()=>{
     const corre = await criaCartao(localidade)
 })
 
+
+
+const buscaApi = async(cidade)=>{
+    try{
+        const chave = '1b83ba0a5e8b9652e01ec52f0f1dd40d'
+        return fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cidade}&limit=5&appid=${chave}`)
+        .then(resposta=>resposta.json())
+    }catch (error){
+        return (error)
+    }
+}
+
+
+
+
 busca.addEventListener('keyup',async(event)=>{
     if((event.key == "Enter")){
     const localidade = busca.value;
@@ -57,7 +72,7 @@ const criaCartao = async(local)=>{
     descricao.innerHTML = `<span>${weather[0].description}</span>`
     vento.innerHTML= `Velocidade vento de: <span>${wind.speed} Km/H</span>`
     humidade.innerHTML = `Humidade de : <span>${humidity}%</span>`
-    icon.src = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`   
+    icon.src = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`   
 }
 
 window.onload=()=>{
