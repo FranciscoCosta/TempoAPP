@@ -62,6 +62,7 @@ const criaCartao = async (local) => {
   vento.innerHTML = `Velocidade vento de: <span>${wind.speed} Km/H</span>`;
   humidade.innerHTML = `Humidade de : <span>${humidity}%</span>`;
   icon.src = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+  
 };
 
 window.onload = () => {

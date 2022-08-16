@@ -19,7 +19,7 @@
 }
 
 .cartao{
-    border: 1px solid;
+    border: 2px solid #ead94c;
     padding: 1em;
     width: 100%;
     max-width: 450px;
@@ -57,7 +57,9 @@
     width: 80%;
     font-size: 1.5rem;
 }
-
+.barra-procurar:focus{
+    border: 2px solid #FFFFFF;
+}
 .tempo{
     font-size: 1.2rem;
 }
