@@ -46,8 +46,6 @@
     cursor: pointer;
 }
 
-
-
 .barra-procurar{
     border-radius: 18px;
     border: none;
@@ -57,15 +55,15 @@
     color: #FFFFFF;
     height: 3rem;
     width: 80%;
-    font-size: 1.8rem;
-}
-
-.tempo{
     font-size: 1.5rem;
 }
 
+.tempo{
+    font-size: 1.2rem;
+}
+
 #cidade{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #ead94c;
 }
 
@@ -74,6 +72,6 @@ span{
     color: #ead94c;
 }
 #descricao{
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
 }
